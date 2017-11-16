@@ -23,6 +23,12 @@
     "config": {
         "process-timeout": 600
     },
-    "prefer-stable": true,
-    "minimum-stability": "dev"
+    
+    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "scripts": {
+        "post-create-project-cmd": [
+          "php post-install.php"
+        ]
+  }
 }
