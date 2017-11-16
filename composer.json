@@ -1,6 +1,5 @@
 {
     "name": "qunabu/silverstripe4-installer",
-    "type": "silverstripe-recipe",
     "description": "The SilverStripe Framework Installer",
     "require": {
         "php": ">=5.6.0",
