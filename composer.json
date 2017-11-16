@@ -1,5 +1,5 @@
 {
-    "name": "silverstripe/installer",
+    "name": "qunabu/silverstripe4-installer",
     "type": "silverstripe-recipe",
     "description": "The SilverStripe Framework Installer",
     "require": {
