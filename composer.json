@@ -25,6 +25,7 @@
     },
     
     "prefer-stable": false,
+    "prefer-dist": true,
     "minimum-stability": "dev",
     "scripts": {
         "post-create-project-cmd": [
