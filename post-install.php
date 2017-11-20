@@ -64,4 +64,20 @@ echo $dir.' '.is_dir($dir);
 echo "\n";
 Delete($dir);
 
-rcopy(dirname(__FILE__).'/themes/qunabu/', dirname(__FILE__).'/themes/'.strtolower(getCurrentDirectory()));
+$currentDir = strtolower(getCurrentDirectory());
+
+rcopy(dirname(__FILE__).'/themes/qunabu/', dirname(__FILE__).'/themes/'.$currentDir);
+
+$config_file = dirname(__FILE__).'/mysite/_config/theme.yml';
+
+if (is_file($config_file)) {
+
+  $config = file_get_contents($config_file);
+
+  $config = str_replace('simple', $currentDir, $config);
+
+  file_put_contents($config_file, $config);
+
+}
+
+
