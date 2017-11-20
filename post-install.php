@@ -80,4 +80,5 @@ if (is_file($config_file)) {
 
 }
 
+copy(dirname(__FILE__).'/.env.example', dirname(__FILE__).'/.env');
 
