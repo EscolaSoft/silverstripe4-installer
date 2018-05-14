@@ -6,7 +6,7 @@
         "silverstripe/recipe-plugin": "1.x-dev",
         "silverstripe/recipe-cms": "1.x-dev",
         "silverstripe-themes/simple": "~3.2.0",
-        "silverstripe/elemental-blocks": "dev-master"
+        "silverstripe/elemental-blocks": "dev-master",
         "qunabu/silverstripe-theme":"dev-master",
         "qunabu/silverstripe-qunabu-helpers":"4.0.x-dev"
     },
