@@ -1,13 +1,40 @@
-version: '3'
+version: '2'
 
 services:
   php:
-    build:
-      context: .
+    image: thecodingmachine/php:7.2-v1-apache
     ports:
       - "3000:80"
-      - "35729:35729"
     restart: always
     volumes:
-      - .:/var/www
+      - .:/var/www/html
+    environment:
+      PHP_EXTENSION_XDEBUG: 1
+      PHP_INI_ERROR_REPORTING: E_ALL
+      PHP_INI_XDEBUG__REMOTE_PORT: 3000
+      PHP_IDE_CONFIG: "serverName=php"
+      XDEBUG_CONFIG: "remote_port=3000 remote_autostart=1"
+      PHP_EXTENSION_INTL: 1
+      PHP_EXTENSION_GD: 1
+  db:
+    image: mysql:5.7
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_USER: username
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: silverstripe
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3002:80"
+    links:
+      - db
+
 
