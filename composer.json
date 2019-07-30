@@ -9,14 +9,7 @@
         "silverstripe/elemental-blocks": "dev-master",
         "qunabu/silverstripe-theme": "dev-master",
         "qunabu/silverstripe-qunabu-helpers": "4.0.x-dev",
-        "sheadawson/silverstripe-linkable": "^2.0@dev",
-        "magnum34/silverstripe-svg-go": "dev-master",
-        "silverstripe/blog": "^4.0@dev",
-        "tractorcow/silverstripe-fluent": "dev-master",
-        "dnadesign/silverstripe-elemental-virtual": "^1.0@dev",
-        "dnadesign/silverstripe-elemental-list": "^1.0@dev",
         "silverstripe/tagfield": "^2.0@dev",
-        "edgarindustries/youtubefield": "dev-master",
         "undefinedoffset/sortablegridfield": "^2.0@dev",
         "bummzack/sortablefile": "^2.0"
 
